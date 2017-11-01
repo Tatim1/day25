@@ -1,0 +1,104 @@
+@font-face {
+	font-family: "TrueType";
+	src: url("../fonts/PlayfairDisplay-Regular.ttf");
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: "TrueType";
+	src: url("../fonts/Lato-Light.ttf");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "TrueType";
+	src: url("../fonts/Lato-Italic.ttf");
+	font-weight: 400;
+	font-style: normal; 
+}
+* {
+	box-sizing: border-box;
+} 
+html, body {
+	height: 100%;
+	width: 100%;  
+ 	margin: 0; 
+}  
+
+.editor {
+	background-color: #ffffff;
+	padding: 130px 100px 130px 100px;
+
+}
+
+.editor__text {
+ 	display: inline-block;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 68px 68px rgba(0, 0, 0, 0.03);
+	padding: 138px 152px 120px 120px;
+	color: #aeaeae;
+
+}
+
+.editor__text p {
+	font-family: "Lato-Light", sans-serif; 
+  	font-size: 95%;
+  	margin-bottom: 40px;
+
+}
+.editor__text p:first-of-type::first-letter { 
+	float: left;   
+	font-family: "PlayfairDisplay-Regular", serif; 
+    font-size: 250%; 
+    color: #171717;  
+	padding-top: 0;
+	padding-right: 10px; 
+}
+
+.editor__title {
+	font-family: "PlayfairDisplay-Regular", serif;
+	margin-bottom: 40px;
+	color: #171717;
+}
+
+.editor__text p:nth-child(5) {
+	font-family: "Lato-Italic", sans-serif;
+	font-size: 100%;
+} 
+
+q::before {
+	content: "\201c";
+	font-size: 30px;
+	font-family: "Lato-Italic", sans-serif;
+} 
+
+.brd {
+	color: #eaa258;
+	border: 1px solid #eaa258;
+	padding: 10px 40px 10px 40px;
+	display: inline-block;
+	background: white;
+}
+
+.brd:hover {
+	background: rgb(167,91,41) -webkit-linear-gradient(rgb(126,69,35), rgb(167,91,41) 80%);
+	background: rgb(167,91,41) -o-linear-gradient(rgb(126,69,35), rgb(167,91,41) 80%);
+	background: rgb(167,91,41) linear-gradient(rgb(126,69,35), rgb(167,91,41) 80%);
+}
+
+.brd:active {
+	background: rgb(120,63,15) -webkit-linear-gradient(rgb(120,63,15) 20%, rgb(167,91,41));
+	background: rgb(120,63,15) -o-linear-gradient(rgb(120,63,15) 20%, rgb(167,91,41));
+	background: rgb(120,63,15) linear-gradient(rgb(120,63,15) 20%, rgb(167,91,41)); 
+	box-shadow:
+		0 3px rgb(86,38,6),
+		0 2px 10px rgba(0,0,0,0.4),
+		inset 0 2px rgba(255,255,255,0.3),
+		inset 0 0 6px rgba(255,255,255,0.5);
+		-webkit-transform: translate(0, 4px);
+	transform: translate(0, 10px);
+}
+
+
+  
+
